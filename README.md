@@ -21,15 +21,43 @@ Este proyecto fue desarrollado como entrega del Momento 1, evidenciando:
 4. **Ver Balance**: calcula el total de ingresos, total de gastos y el saldo.
 5. **Salir**: termina la ejecución del programa.
 
-## Cómo ejecutar el proyecto
+## Cómo instalar y ejecutar el proyecto (desde Visual Studio Code)
 
-Requisitos: tener Python 3 instalado.
+Requisitos: tener instalados Visual Studio Code, Python 3, Git, y la
+extensión oficial de Python en VS Code.
 
-```bash
-python app.py
-```
+1. **Clona el repositorio**: abre VS Code → `Ctrl+Shift+P` → escribe y
+   selecciona `Git: Clone` → pega la URL
+   `https://github.com/SantiagoMJaramillo/App-Mondey.git` → elige una
+   carpeta destino → cuando termine, clic en "Open" para abrir el proyecto.
 
-Luego sigue las instrucciones del menú en pantalla.
+2. **Crea el entorno virtual**: `Ctrl+Shift+P` → escribe y selecciona
+   `Python: Create Environment` → elige `Venv` → selecciona el intérprete
+   de Python que tengas instalado. VS Code crea la carpeta `.venv`
+   automáticamente (no viene incluida en el repositorio, se genera local
+   en cada equipo).
+
+3. **Selecciona el intérprete**: si no se activó solo, `Ctrl+Shift+P` →
+   `Python: Select Interpreter` → elige el que dice `.venv`.
+
+4. **Ejecuta el programa**: abre `App.py` en el editor y presiona el botón
+   ▶ (Run Python File) arriba a la derecha, o clic derecho dentro del
+   archivo → "Run Python File in Terminal". Este proyecto no usa
+   librerías externas, así que no necesitas instalar nada adicional.
+
+## Cómo ver y subir cambios (control de versiones)
+
+Todo se hace desde el panel **Source Control** (ícono de la ramita en la
+barra lateral izquierda, `Ctrl+Shift+G`):
+
+- Los archivos modificados aparecen listados ahí.
+- Clic en el `+` junto a cada archivo para agregarlos (equivalente a `git add`).
+- Escribe un mensaje en el cuadro de texto superior y presiona el ✓ para
+  confirmar el cambio (equivalente a `git commit`).
+- Usa el botón "Sync Changes" o el menú `...` → "Push" para subir los
+  cambios a GitHub (equivalente a `git push`).
+- Para cambiar de rama, haz clic en el nombre de la rama actual, abajo a
+  la izquierda de la ventana, y elige la rama a la que quieres moverte.
 
 ## Estructura de datos
 
@@ -44,3 +72,4 @@ Cada movimiento se guarda como un diccionario dentro de una lista:
 }
 ```
 
+## Estructura del proyecto
